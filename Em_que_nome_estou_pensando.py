@@ -1,7 +1,7 @@
 """
 Programa: Em que nome eu estou pensando
 Autor: Thiago Lira
-Versão: 3.8.3
+Versão: 3.8
 Fazendo: 06/07/2020
 Descrição: Um pequeno jogo, onde contêm na lista alguns nome e o jogador tem que
            adivinhar em qual nome o computador pensou.

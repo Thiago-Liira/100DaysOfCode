@@ -1,7 +1,7 @@
 """
 Programa: Operação basicas matematica e tabuada
 Autor: Thiago Lira
-Verção: 3.8.3
+Verção: 3.8
 Finalizado: 02/07/2020
 Descrição: Programa quer pergunta ao o usuário qual das operação basicas
            ele vai querer realizar ou mostrar a tabuada.

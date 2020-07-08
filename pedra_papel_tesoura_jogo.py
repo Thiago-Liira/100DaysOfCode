@@ -1,7 +1,7 @@
 """
 Programa: Jogo pedra papel e tesoura
 Autor: Thiago Lira
-Versão: 3.8.3
+Versão: 3.8
 Fazendo: 04/07/2020
 Descrição: Um pequeno jogo pedra papel e tesoura, em outras regiões conhecido como Jokenpô.
 """
