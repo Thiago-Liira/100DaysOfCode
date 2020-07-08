@@ -11,9 +11,10 @@ print("""
     2: Subtração
     3: Mutiplicação
     4: Divisão
-    5: Tabuada
+    5: Potenciação
+    6: Tabuada
 """)
-for i in range(1, 3):
+for i in range(1, 2):
     i = int(input('Informe um número: '))
     if 1 == i: #Soma
         n1 = int(input('Digite um número: '))
@@ -46,12 +47,27 @@ for i in range(1, 3):
         d = n1 / n2
 
         print('A soma do número {} / {} = {}'.format(n1, n2, d))
-    
-    elif 5 == i: #Tabuada
+
+    elif 5 == i: #Potenciação
+        base = int(input('Informe o valor da base: '))
+        expoente = int(input('Informe o valor do expoente: '))
+
+        if base != 0 and expoente == 0:
+            print('A potenciação é 1')
+        elif base != 0 and expoente == 1:
+            print('A pontenciação é {}'.format(base))
+        elif base == 1:
+            print('A pontenciação é {}'.format(base))
+        elif base == 0:
+            print('A pontenciação é {}'.format(base))
+        else:
+            potencia = base ** expoente
+            print('A potenciação é {}'.format(potencia))
+
+    elif 6 == i: #Tabuada
         n = int(input('Qual a tabuada que você quer olhar? '))
         for i in range(1, 11):
             print(i, 'x', n, '=', i*n)
     else:
         print('Você informou um número inválido!')
-
 
