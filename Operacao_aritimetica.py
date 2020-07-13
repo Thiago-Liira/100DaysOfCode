@@ -16,7 +16,8 @@ print("""
     5: Potenciação
     6: Tabuada
     7: Fatorial
-    8: Sair do programa
+    8: Progressão aritmética
+    9: Sair do programa
 """)
 digito = 0
 while digito != 7:
@@ -80,8 +81,12 @@ while digito != 7:
         for i in range(num, 1, -1):
             f *= i
         print(f)
-            
-    elif 8 == digito: #Saindo do programa
+    
+    elif 8 == digito: # Progressão aritmética
+        n = int(input('Digite o número de termo: '))
+        r = int(input('Digite a razão: '))
+        
+    elif 9 == digito: #Saindo do programa
         print('Finalizando o programa...')
         time.sleep(1)
         break
