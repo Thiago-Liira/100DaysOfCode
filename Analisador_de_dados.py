@@ -10,7 +10,7 @@ h = 0
 g = 0
 media_idade = 0
 media_altura = 0
-for i in range(1,6):
+for i in range(1,3):
     nome = str(input('Digite seu nome: ')).split()
     idade = int(input('Digite sua idade: '))
     sexo = str(input('Digite seu sexo: [M/F]: ')).upper().strip()[0]
