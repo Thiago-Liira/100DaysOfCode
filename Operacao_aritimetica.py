@@ -6,6 +6,8 @@ Finalizado: 02/07/2020
 Descrição: Programa quer pergunta ao o usuário qual das operação basicas
            ele vai querer realizar ou mostrar a tabuada.
 """
+import time
+
 print("""
     1: Soma
     2: Subtração
@@ -13,10 +15,13 @@ print("""
     4: Divisão
     5: Potenciação
     6: Tabuada
+    7: Fatorial
+    8: Sair do programa
 """)
-for i in range(1, 2):
-    i = int(input('Informe um número: '))
-    if 1 == i: #Soma
+digito = 0
+while digito != 7:
+    digito = int(input('Informe um número: '))
+    if 1 == digito: #Soma
         n1 = int(input('Digite um número: '))
         n2 = int(input('Digite outro número: '))
 
@@ -24,7 +29,7 @@ for i in range(1, 2):
 
         print('A soma do número {} + {} = {}'.format(n1, n2, s))
 
-    elif 2 == i: #Subtração
+    elif 2 == digito: #Subtração
         n1 = int(input('Digite um número: '))
         n2 = int(input('Digite outro número: '))
 
@@ -32,7 +37,7 @@ for i in range(1, 2):
 
         print('A soma do número {} - {} = {}'.format(n1, n2, Subtração))
 
-    elif 3 == i: #Mutiplicação
+    elif 3 == digito: #Mutiplicação
         n1 = int(input('Digite um número: '))
         n2 = int(input('Digite outro número: '))
 
@@ -40,7 +45,7 @@ for i in range(1, 2):
 
         print('A soma do número {} x {} = {}'.format(n1, n2, m))
 
-    elif 4 == i: #Divisão
+    elif 4 == digito: #Divisão
         n1 = int(input('Digite um número: '))
         n2 = int(input('Digite outro número: '))
 
@@ -48,7 +53,7 @@ for i in range(1, 2):
 
         print('A soma do número {} / {} = {}'.format(n1, n2, d))
 
-    elif 5 == i: #Potenciação
+    elif 5 == digito: #Potenciação
         base = int(input('Informe o valor da base: '))
         expoente = int(input('Informe o valor do expoente: '))
 
@@ -64,10 +69,23 @@ for i in range(1, 2):
             potencia = base ** expoente
             print('A potenciação é {}'.format(potencia))
 
-    elif 6 == i: #Tabuada
+    elif 6 == digito: #Tabuada
         n = int(input('Qual a tabuada que você quer olhar? '))
         for i in range(1, 11):
             print(i, 'x', n, '=', i*n)
+    
+    elif 7 == digito: #Fatorial
+        num = int(input('Digite um número para calcular seu fatorial: '))
+        fatorial = num
+        while fatorial > 0:
+            print(fatorial)
+            fatorial -= 1
+            
+    elif 8 == digito: #Saindo do programa
+        print('Finalizando o programa...')
+        time.sleep(1)
+        break
+
     else:
         print('Você informou um número inválido!')
 
