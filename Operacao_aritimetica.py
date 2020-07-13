@@ -76,10 +76,10 @@ while digito != 7:
     
     elif 7 == digito: #Fatorial
         num = int(input('Digite um número para calcular seu fatorial: '))
-        fatorial = num
-        while fatorial > 0:
-            print(fatorial)
-            fatorial -= 1
+        f = 1
+        for i in range(num, 1, -1):
+            f *= i
+        print(f)
             
     elif 8 == digito: #Saindo do programa
         print('Finalizando o programa...')
