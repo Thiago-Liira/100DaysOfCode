@@ -1,10 +1,10 @@
 """
-Programa: Operação basicas matematica e tabuada
+Programa: Operações matemática.
 Autor: Thiago Lira
 Verção: 3.8
 Finalizado: 02/07/2020
-Descrição: Programa quer pergunta ao o usuário qual das operação basicas
-           ele vai querer realizar ou mostrar a tabuada.
+Descrição: Programa quer pergunta ao o usuário qual das operação
+           ele vai querer realiza.
 """
 import time
 
@@ -83,8 +83,15 @@ while digito != 7:
         print(f)
     
     elif 8 == digito: # Progressão aritmética
+        a1 = int(input('Digite o primeiro termo: '))
         n = int(input('Digite o número de termo: '))
         r = int(input('Digite a razão: '))
+
+        an = a1 + (n - 1) * r
+
+        for i in range(a1, an + 1, r):
+            print(i, end= ' ')
+        print()
         
     elif 9 == digito: #Saindo do programa
         print('Finalizando o programa...')
