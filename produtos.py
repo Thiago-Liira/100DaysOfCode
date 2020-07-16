@@ -14,11 +14,10 @@ while True:
     while preço < 0:
         #print('O produto não pode ser negativo!!')
         preço = float(input('Informe o preço do produto: '))
+    
 
-    resposta = str(input('Deseja continuar cadastrando produto [S/N]: ')).upper()[0]
-    while resposta != 'S' and resposta != 'N':
+    resposta = ' '
+    while resposta not in 'SNsn' :
         resposta = str(input('Deseja continuar cadastrando produto [S/N]: ')).upper()[0]        
-    if resposta != 'N':
+    if resposta == 'N':
         break
-
-
